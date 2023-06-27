@@ -92,7 +92,6 @@ input {
     position: absolute;
     width: 390px;
     height: 1008px;
-    background: white;
     list-style-type: none;
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
@@ -122,10 +121,11 @@ input {
   #menuToggle input:checked ~ ul {
     position: absolute;
     transform: none;
-    opacity: 0.9;
+    opacity: 1;
     width: 410px;
     height: 1008px;
     margin-left: -380px;
+    backdrop-filter: blur(5px);
   }
 
   #menu > a > li {
