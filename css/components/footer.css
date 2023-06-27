@@ -1,0 +1,28 @@
+footer {
+  background: var(--dark-grey);
+}
+
+.footer__container {
+  height: 80px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  font-size: 13px;
+}
+
+@media (max-width: 676px) {
+  .footer__container {
+    height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer__logo {
+    height: 18px;
+  }
+}
