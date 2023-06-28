@@ -74,7 +74,7 @@ input {
 
   #menuToggle input:checked ~ span {
     opacity: 1;
-    transform: rotate(49deg) translate(2px, 3px);
+    transform: rotate(48deg) translate(2px, 3px);
     background: #222222;
   }
 
@@ -103,8 +103,8 @@ input {
     flex-direction: column;
     align-items: center;
     transform: none;
-    opacity: 0;
     transition: opacity 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    display: none;
   }
 
   #menu > a {
@@ -121,11 +121,11 @@ input {
   #menuToggle input:checked ~ ul {
     position: absolute;
     transform: none;
-    opacity: 1;
     width: 410px;
     height: 1008px;
-    margin-left: -380px;
     backdrop-filter: blur(5px);
+    display: flex;
+    -webkit-tap-highlight-color: transparent;
   }
 
   #menu > a > li {
